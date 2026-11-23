@@ -1,0 +1,104 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* root */
+:root {
+    --color-primary-brand-1: #215C58;
+    --color-primary-brand-2: #0D2422;
+    --color-primary-light-1: #FAFCFC;
+    --color-primary-light-2: #F4F7F7;
+    --color-primary-light-3: #DFE7E6;
+    --color-primary-dark-1: #8C2851;
+    --color-primary-dark-2: #344645;
+    --color-primary-dark-3: #4E5E5D;
+    --font-title: "Bricolage Grotesque", sans-serif;
+    --font-body: "Geist", sans-serif;
+    --font-accent: "Space Mono", monospace;
+
+}
+
+/* - * stilizmi baze per hapesira */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* stilizime body */
+body {
+    font-size: 1em;
+    line-height: 1.5;
+    background-color: var(--color-primary-brand-1);
+    color: var(--color-primary-light-2);
+    font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-title);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary-light-1);
+    font-family: var(--font-body);
+}
+
+/* Button */
+.btn-outline-success {
+    border-color: var(--color-primary-light-1);
+    color: var(--color-primary-light-1)
+}
+
+.btn-outline-success:hover,
+:not(.btn-check)+.btn:active {
+    background-color: var(--color-primary-light-1);
+    color: var(--color-primary-brand-2);
+}
+
+.btn-primary {
+    background-color: var(--color-primary-dark-1);
+    color: var(--color-primary-light-1);
+    border-color: var(--color-primary-dark-1);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-light-1);
+    color: var(--color-primary-dark-1);
+    border-color: var(--color-primary-dark-1);
+}
+
+/* Navbar */
+.nav-link, .navbar-nav .nav-link.active{
+  color: var(--color-primary-light-1);  
+}
+.navbar-brand{
+    font-weight: bold;
+    color: var(--color-primary-light-1); 
+    font-family: var(--font-accent);
+}
+.nav-link:hover,  .navbar-brand:hover{
+    color: var(--color-primary-dark-1);
+}
+.navbar-brand > img{
+    width:100px;
+    height: 100px
+}
+
+.carousel-inner, .carousel-inner img{
+    height: 400px;
+    object-fit: cover;
+}
+footer{
+    background-color: var(--color-primary-brand-2) ;
+}
+footer img{
+    width:100px;
+    height:100px
+}

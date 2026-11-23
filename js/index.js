@@ -1,0 +1,1 @@
+document.querySelector(".viti").textContent = new Date().getFullYear()

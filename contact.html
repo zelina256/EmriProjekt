@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- nis navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- fund navbar -->
+    <!-- nis header -->
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-9">
+                <h1>Contact us</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam facere libero minus voluptates
+                    quidem natus. Est adipisci molestias sed officiis</p>
+                <a href="#formContact">Form</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <img src="images/coffee-cup.png" class="img-fluid" alt="">
+
+            </div>
+        </div>
+    </header>
+    <!-- fund header -->
+    <!-- nis main -->
+    <main class="container">
+        <section class="row contact">
+            <div class="col-12 col-md-6">
+                <h2>Contact Form</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="firstname" class="form-label"> First Name</label>
+                        <input type="text" id="firstname" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastname" class="form-label"> First Name</label>
+                        <input type="text" id="lastname" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email">
+                        <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Comment</label>
+                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="terms">
+                        <label class="form-check-label" for="terms">Terms</label>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Send">
+                </form>
+            </div>
+            <div class="col-12 col-md-6">
+                <h3>Info contact</h3>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Email</h5>
+                                <a href="emailto:email@gmail.com">email@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Phone</h5>
+                                <a href="tel:0000000">00000000</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.3232951431546!2d19.81201867553061!3d41.323582799951396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350313540c99c4b%3A0x7398d6f11582ba30!2sDominusoft%20Education!5e0!3m2!1sen!2s!4v1795021721880!5m2!1sen!2s"
+                allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+    </main>
+    <!-- fund main -->
+    <!-- nis footer -->
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <!-- .col-12.col-md-6.col-lg-3*4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="images/coffee-cup.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quidem quae tempora recusandae,
+                        obca.</p>
+                    <div>
+                        <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:0000000"><i class="fa-solid fa-phone"></i> 0000000</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3>Subscribe</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="subscribe">
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p>&copy; Copyright <span class="viti"></span></p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <a href="">Terms and Conditons</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- fund footer -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu"
+        crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="js/contact.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
