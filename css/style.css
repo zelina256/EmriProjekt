@@ -102,3 +102,228 @@ footer img{
     width:100px;
     height:100px
 }
+
+/* Featured Section */
+.featured-section {
+    background: linear-gradient(135deg, var(--color-primary-brand-1) 0%, var(--color-primary-brand-2) 100%);
+    color: var(--color-primary-light-1);
+}
+
+.featured-section .btn-outline-secondary {
+    color: var(--color-primary-light-1);
+    border-color: var(--color-primary-light-1);
+}
+
+.featured-section .btn-outline-secondary:hover {
+    background-color: var(--color-primary-light-1);
+    color: var(--color-primary-brand-1);
+}
+
+/* Product Cards */
+.product-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: var(--color-primary-light-1);
+    color: var(--color-primary-brand-2);
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-card .price-tag {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-primary-dark-1);
+    font-family: var(--font-accent);
+}
+
+.product-card .card-text {
+    color: var(--color-primary-dark-3);
+}
+
+/* Promotion Banner */
+.promotion-banner {
+    background: linear-gradient(135deg, var(--color-primary-dark-1) 0%, var(--color-primary-brand-1) 100%);
+    color: var(--color-primary-light-1);
+}
+
+.promotion-banner h2 {
+    color: var(--color-primary-light-1);
+}
+
+.promotion-card {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: var(--color-primary-brand-2);
+}
+
+.promotion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.promotion-card i {
+    font-size: 2rem;
+    color: var(--color-primary-dark-1);
+}
+
+/* About Section */
+.about-section {
+    color: var(--color-primary-light-1);
+}
+
+.about-section h2 {
+    color: var(--color-primary-light-1);
+}
+
+.about-section p {
+    color: var(--color-primary-light-2);
+    line-height: 1.8;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.1rem;
+    color: var(--color-primary-light-1);
+}
+
+.feature-item i {
+    font-size: 1.5rem;
+    color: var(--color-primary-dark-1);
+}
+
+.about-section iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+/* FAQ Section */
+.faq-section {
+    color: var(--color-primary-light-1);
+}
+
+.faq-section h2 {
+    color: var(--color-primary-light-1);
+}
+
+.accordion-custom {
+    --bs-accordion-bg: transparent;
+    --bs-accordion-active-bg: rgba(255, 255, 255, 0.1);
+}
+
+.accordion-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.accordion-button {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--color-primary-light-1);
+    border: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.accordion-button:focus {
+    border-color: var(--color-primary-dark-1);
+    box-shadow: 0 0 0 0.25rem rgba(139, 40, 81, 0.25);
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23FAFCFC' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    filter: brightness(1.2);
+}
+
+.accordion-body {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--color-primary-light-2);
+    border-radius: 10px;
+    padding: 15px 20px;
+    line-height: 1.8;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+    background: linear-gradient(135deg, var(--color-primary-dark-1) 0%, var(--color-primary-brand-1) 100%);
+}
+
+.subscribe-content {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(244, 247, 247, 0.95) 100%);
+    color: var(--color-primary-brand-2);
+}
+
+.subscribe-content h2 {
+    color: var(--color-primary-brand-2);
+}
+
+.subscribe-content .lead {
+    color: var(--color-primary-dark-3);
+}
+
+.subscribe-form input {
+    border-radius: 8px;
+    border: 2px solid var(--color-primary-dark-1);
+    color: var(--color-primary-brand-2);
+}
+
+.subscribe-form input:focus {
+    border-color: var(--color-primary-dark-1);
+    box-shadow: 0 0 0 0.2rem rgba(139, 40, 81, 0.25);
+}
+
+.subscribe-form input::placeholder {
+    color: rgba(13, 36, 34, 0.5);
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+    .featured-section .display-5,
+    .faq-section .display-5,
+    .subscribe-content .display-5 {
+        font-size: 1.75rem;
+    }
+
+    .product-card img {
+        height: 200px;
+    }
+
+    .promotion-card {
+        padding: 1.5rem !important;
+    }
+
+    .about-section iframe {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form .col-md-5,
+    .subscribe-form .col-md-3 {
+        min-width: 100%;
+    }
+}
